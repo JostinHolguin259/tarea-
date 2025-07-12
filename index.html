@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SGA UTM - Rediseño</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>SGA - Universidad Técnica de Manabí</h1>
+    <nav class="navbar">
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Perfil</a></li>
+        <li><a href="#">Solicitudes</a></li>
+        <li><a href="#">Reportes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <aside class="sidebar">
+      <h2>Menú Principal</h2>
+      <ul>
+        <li><a href="#">Tutorías</a></li>
+        <li><a href="#">Ayuda</a></li>
+        <li><a href="#">Solicitudes</a></li>
+        <li><a href="#">Mi Perfil</a></li>
+        <li><a href="#">Reportes</a></li>
+      </ul>
+    </aside>
+
+    <section class="content">
+      <h2>Bienvenido, Jostin</h2>
+      <p>Este es un rediseño adaptativo del sistema SGA para ofrecer mejor experiencia en móviles y pantallas pequeñas.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Universidad Técnica de Manabí</p>
+  </footer>
+
+  <script>
+    // Script para menú móvil
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
